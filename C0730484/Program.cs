@@ -6,7 +6,8 @@ namespace C0730484
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Peter is the best Teacher");
+            Console.ReadLine();
         }
     }
 }
