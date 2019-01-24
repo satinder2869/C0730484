@@ -6,67 +6,76 @@ using System.Threading.Tasks;
 
 namespace C0730484
 {
-    public class Customer
+    public class customer
     {
         public int ID { get; set; }
-        public string Name { get; set; }
-        public void Promote()
+        public string name { get; set; }
+        public void promote()
         {
-            var rating = CalculateRating();
+            var rating = calculaterating();
             if (rating == 0)
-            {
-                Console.WriteLine("promoted to Level 1");
+            { Console.WriteLine("Promoted to level 1"); }
+            else
+            {//commit again
+                Console.WriteLine("Level 2");
             }
-            else { Console.WriteLine("Promoted to level 2"); }
         }
-        public int CalculateRating()
+        public int calculaterating()
         {
             return 0;
         }
 
     }
     class Program
+
     {
         static void Main(string[] args)
         {
-            var customer = new Customer();
-            Car Purple = new Car();
-            var bowling = new Car();
-            Console.WriteLine("how many cars: {0}", Vehicle.howManyCars);
-            Book mybook = new Book();
-            mybook.SetTitle("A Separate Peace");
-            Console.WriteLine(mybook.GetTitle());
-            Console.ReadLine();
-
+            var customer = new customer();
+            //var dog_and_cat = new car();
+            //var bowlimng = new car();
+            //Console.WriteLine("How many cars: {0}",vehicle.howmanycars);
+            //book mybook = new book();
+            //mybook.SetTitle("A separate Peace");
+            //Console.WriteLine(mybook.GetTitle());
         }
     }
-    class Vehicle
+    class vehicle
+
     {
-        public static int howManyCars = 0;
+        public static int howmanycars = 0;
         public String Color = "Blue";
 
     }
-    class Car : Vehicle
+    class car : vehicle
     {
         public String Color = "Red";
-        public Car()
+        public car()
         {
-            Vehicle.howManyCars++;
+            vehicle.howmanycars++;
             Console.WriteLine("my color is " + Color);
-
         }
+
     }
-    class BookCollection
+    class Bookcollection
     {
 
     }
-    class Book : BookCollection
+    class book : Bookcollection
     {
         private String Title;
-        public void SetTitle(String aTitle) { this.Title = aTitle; }
+        public void SetTitle(String aTitle)
+        {
+            this.Title = aTitle;
+
+        }
         public String GetTitle() { return this.Title; }
     }
 
-
-
 }
+
+
+
+
+
+
