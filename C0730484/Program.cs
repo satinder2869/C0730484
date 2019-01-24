@@ -6,7 +6,7 @@ namespace C0730484
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Peter is the best Teacher");
+            Console.WriteLine("Peter is the best Teacher 2019W CSD 3354 1 [B230] WEB APPLICATIONS USING C# .NET");
             Console.ReadLine();
         }
     }
