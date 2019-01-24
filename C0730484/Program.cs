@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace week__3
+namespace C0730484
 {
     public class Customer
     {
